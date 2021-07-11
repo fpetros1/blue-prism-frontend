@@ -5,6 +5,7 @@ import { fetchAllSchedules } from '../../redux/actions/schedule.actions';
 import ScheduleListProps from './schedule-list.props';
 import IAppState from '../../types/app-state.type';
 import ISchedule from '../../types/schedule.type';
+import Schedule from '../schedule/schedule.component';
 
 class ScheduleList extends React.Component<ScheduleListProps, IAppState> {
 
@@ -22,14 +23,13 @@ class ScheduleList extends React.Component<ScheduleListProps, IAppState> {
 
     render() {
         if (this.props.schedules) {
-            return this.props.schedules.map((schedule: ISchedule) => {
-                return <div key={schedule.id}>
-                    <label>ID: { schedule.id }</label>
-                    <br/>
-                    <label>Name: { schedule.name }</label>
-                    <br></br>
-                </div>;
-            });
+            return <div className="p-15">
+                { 
+                    this.props.schedules.map((schedule: ISchedule) => {
+                        return <Schedule key={schedule.id} schedule={schedule} />
+                    }) 
+                }
+            </div>; 
         }
         return null;
     }

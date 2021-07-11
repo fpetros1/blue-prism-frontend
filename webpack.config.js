@@ -27,17 +27,14 @@ module.exports = {
                 loader: 'source-map-loader'
             },
             {
-                test: /\.css$/,
-                loader: 'css-loader'
+                test: /\.css$/i,
+                use: ["style-loader", "css-loader"]
             }
         ]
     },
     plugins: [
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, 'src', 'index.html')
-        }),
-        new MiniCssExtractPlugin({
-            filename: './src/main.css'
         })
     ]
 }
