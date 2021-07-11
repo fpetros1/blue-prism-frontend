@@ -4,13 +4,13 @@ export default interface ISchedule {
     name: string;
     description: string;
     isRetired: boolean;
-    tasksCound: number;
-    startPoint: Date;
-    endPoint: Date;
+    tasksCount: number;
+    startPoint: string;
+    endPoint: string;
     dayOfWeek: number;
     dayOfMonth: number;
-    startDate: Date;
-    endDate: Date;
+    startDate: string;
+    endDate: string;
     intervalType: string;
     timePeriod: string;
 
