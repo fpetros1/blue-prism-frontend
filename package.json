@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "set:env": "ts-node set-env.ts",
-    "test": "jest",
-    "test:watch": "node npm run test -- --watch",
+    "test": "npm run set:env && jest",
+    "test:watch": "npm run set:env && node npm run test -- --watch",
     "start": "npm run set:env && webpack serve --progress",
     "build": "npm run set:env && webpack"
   },
