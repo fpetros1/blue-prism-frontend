@@ -8,7 +8,7 @@
 * Challenge provided by BluePrism in their selection proccess
 * Built with Node 14.x and NPM 6.x
 * React + Redux app with custom webpack configuration
-* The mock server src is in the main (received from blueprism, no modification)
+* The mock server source code is present on the `mock-server-src` folder for easy access(received from blueprism, no modification)
 * After each commit to the develop branch, this [![Jenkins Project](JenkinsProjects)](http://jenkins.fpetros.com/job/Blue%20Prism%20Frotend%20Develop%20Testing) triggers to test the new code and updates the badge in this README
 * [![Jenkins Project](JenkinsProjects)](http://jenkins.fpetros.com/job/Blue%20Prism%20Frotend%20Build%20And%20Deploy) to build and deploy on my VPS
 * User Jest + @testing-library/react to do unit testing of React components
