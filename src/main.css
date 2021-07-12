@@ -5,7 +5,7 @@ html, body {
 }
 
 .mainTitle {
-    background-color: rgba(10,10,10, 0.9);
+    background-color: #1d3667;
     color: white;
     margin-top: 5px;
     padding: 15px;
@@ -146,6 +146,10 @@ html, body {
     background-color: black;
 }
 
+.m-r-3p {
+    margin-right: 3%;
+}
+
 .p-15 {
     padding: 15px;
 }
@@ -169,7 +173,8 @@ html, body {
 
     .card-content {
         grid-template-columns: auto auto !important;    
-    }   
+    }
+
 }
 
 .box-shadow {
@@ -179,7 +184,7 @@ html, body {
 
 .card {
     width: 100%;
-    min-height: 150px;  
+    min-height: 200px;  
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
     transition: 0.3s;
     margin-bottom: 15px;
@@ -187,12 +192,16 @@ html, body {
 
 .card-title {
     color: white;
-    background-color: rgba(10,10,10, 0.9);
+    background-color: #0d7bc0;
     padding: 15px;
     display: block;
     font-size: 16px;
     font-weight: bold;
     white-space: nowrap;
+}
+
+.selected-card .card-title {
+    background-color: #0c4e8e;
 }
 
 .card-content {
@@ -203,6 +212,16 @@ html, body {
     grid-template-columns: auto auto auto;
     grid-gap: 10px 10px;
     border-radius: 5px;
+}
+
+.card-content-sm {
+    padding: 15px;
+    font-size: 14px;
+    padding-top: 25px;
+    display: grid;
+    grid-gap: 10px 10px;
+    border-radius: 5px;
+    grid-template-columns: auto auto !important;
 }
 
 .card-footer {
@@ -222,8 +241,10 @@ html, body {
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
+    min-width: 120px;
 }
 
 @media (max-width: 812px) {
@@ -246,4 +267,20 @@ html, body {
 .resp-flex-box-70 {
     max-width: 70%;
     width: 100%;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.cursor-pointer * {
+    cursor: pointer;
+}
+
+.btn-green {
+    background-color: green !important;
+}
+
+.btn-red {
+    background-color: rgba(200,0,0,0.7) !important;
 }

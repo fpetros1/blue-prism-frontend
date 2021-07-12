@@ -5,7 +5,8 @@ class HttpClient {
     get<T>(url: string, queryParams?: any) {
         return axios.request<T>({
             url,
-            params: queryParams
+            params: queryParams,
+            method: 'get'
         });
     }
 
@@ -13,7 +14,17 @@ class HttpClient {
         return axios.request<T>({
             url,
             params: queryParams,
-            data: body
+            data: body,
+            method: 'post'
+        });
+    }
+
+    put<T>(url: string, body: any, queryParams?: any) {
+        return axios.request<T>({
+            url,
+            params: queryParams,
+            data: body,
+            method: 'put'
         });
     }
 

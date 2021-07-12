@@ -12,6 +12,6 @@ export default interface ISchedule {
     startDate: string;
     endDate: string;
     intervalType: string;
-    timePeriod: string;
+    timePeriod: number;
 
 }

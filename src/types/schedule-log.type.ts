@@ -1,8 +1,8 @@
-export default interface IScheduleJobs {
+export default interface IScheduleLog {
 
     id: number;
-    startTime: Date;
-    endTime: Date;
+    startTime: string;
+    endTime: string;
     status: string;
     serverName: string;
     scheduleId: number;
