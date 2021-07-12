@@ -20,6 +20,11 @@
 * Clicking the schedule card title that is in a selected state will `deselect` the schedule and clear the logs section
 * The UI adapts to mobile resolution
 
+## Known Issues
+
+* Operating System fractional scaling breaks the UI (150% scaling from 1920x1080 resolution)
+* No support for 1366 x 768 (HD) resolution (use 80% on browser for workaround)
+
 ## TO DO
 
 * More tests
@@ -27,6 +32,7 @@
 * Optimize project components(React) in general
 * Localized CSS for each component
 * Better CSS styling (I'm not the best web designer)
+* Add 1366 x 768 (HD) support
 
 ## Building & Testing the App
 * The envinronment variable `BP_MOCK_SERVER_URL` must be set with the URL of the mock server before building the App
