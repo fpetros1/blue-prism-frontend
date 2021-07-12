@@ -1,0 +1,8 @@
+export enum ActionType {
+
+    FETCH_SCHEDULES = 1,
+    FETCH_SCHEDULE_LOGS = 2,
+    SELECT_SCHEDULE = 3,
+    CLEAR_SCHEDULE_LOGS = 4
+
+}
