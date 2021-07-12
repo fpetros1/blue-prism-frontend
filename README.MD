@@ -23,8 +23,8 @@
 
 ## Known Issues
 
-* Operating System fractional scaling breaks the UI (150% scaling from 1920x1080 resolution)
-* No support for 1366 x 768 (HD) resolution (use 80% on browser for workaround)
+* Operating System fractional scaling breaks the UI (Tested with 150% scaling on 1920x1080 resolution)
+* No support for 1366 x 768 (HD) resolution (use 80% zoom on browser as a workaround)
 
 ## TO DO
 
@@ -36,7 +36,7 @@
 * Add 1366 x 768 (HD) support
 
 ## Building & Testing the App
-* The envinronment variable `BP_MOCK_SERVER_URL` must be set with the URL of the mock server (Ex: https://localhost:3000) before building the App
+* The envinronment variable `BP_MOCK_SERVER_URL` must be set with the URL of the mock server (Ex: http://localhost:3000) before building the App
 * Install the dependencies with `npm install` or `npm i`
 * Either run the App locally with `npm start` or build with `npm run build` (output -> /build) 
 * To run the tests, either use `npm test` to run the tests a single time or `npm run test:watch` to run the tests and watch for file changes, the tests will run again when test files are changed until cancelled (press `w` to see options)
